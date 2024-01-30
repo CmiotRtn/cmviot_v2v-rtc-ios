@@ -1,5 +1,5 @@
 name: CD
-run-name: Release ${{ inputs.version }}
+run-name: ${{ inputs.dry-run && 'Pre' || '' }}Release ${{ inputs.version }}
 
 on:
   workflow_dispatch:
